@@ -99,15 +99,15 @@ export default function Listing() {
               </p>
               {listing.offer && (
                 <p className='bg-green-900 w-full max-w-[200px] text-white text-center p-1 rounded-md'>
-                  ${listing.discountPrice} {listing.type === 'rent' && ' / month'} Discount
+                  ${listing.discountPrice} {listing.type === 'rent' && ' / month'} {"  "}OFF
                 </p>
               )}
             </div>
-            <div className='flex flex-row gap-4'>
+            <div className='flex flex-row gap-4 items-center'>
                 {listing.offer && (
                     <>
                     <span >Discounted Price:</span>
-                    <span className='bg-green-900 w-full max-w-[200px] text-white text-center p-1 rounded-md'>
+                    <span className=' border border-solid border-green-900 w-full max-w-[200px] text-green-700 text-center p-1 rounded-md'>
                     ${+listing.regularPrice - +listing.discountPrice}{listing.type === 'rent' && ' / month'}
                   </span>
                   </>

@@ -240,7 +240,8 @@ useEffect(()=>{
                             <p>Discounted Price</p>
                             {formData.type === 'rent' && (
                             <span className='text-xs'>($ / month)</span>
-                             )}
+                            
+                            )}
                          </div>
                     </div>
                     )
